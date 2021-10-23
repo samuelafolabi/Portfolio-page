@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+html,
+body {
+  font-family: "Nunito";
+  color: #180d3f;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Navigation Bar */
+.nav-list {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
+
+#nav-bar {
+  background-color: #020100;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-list a {
+  list-style: none;
+  text-decoration: none;
+  margin-right: 2rem;
+  font-size: 1.1em;
+  color: #dadada;
+  font-family: "Montserrat";
+}
+
+.nav-list a:hover {
+  color: #a53508;
+}
+
+/* END - Navigation Bar */
+
+/* Hero section BG */
+#hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(41, 13, 1, 0.9)),
+    url("Hero picture.jpg");
+  background-position: center;
+  height: 80%;
+  position: relative;
+  background-size: cover;
+}
+
+/* END - Hero section BG */
+
+/*Place Hero text at the vertical and horizontal center*/
+.hero-text {
+  position: absolute;
+  text-align: center;
+  color: #e0dfdd;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*END - Place Hero text at the vertical and horizontal center*/
+
+/* Hero Text */
+.hero-text h1 {
+  font-size: 2.4em;
+  line-height: 0.1em;
+}
+
+.hero-text p {
+  font-size: 1.4em;
+}
+/* EnD - Hero Text */
+
+/* Call to Action Button */
+.hero-text button {
+  background-color: #fff5f1;
+  border: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: "Nunito";
+  padding: 10px 40px;
+  border-radius: 24px;
+}
+
+.hero-text button:hover {
+  background-color: #a53508; /*orange*/
+  color: #fff5f1;
+}
+
+/* END - Call to Action Button */
+
+/* Works Section Header */
+.works-section-header {
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #39344d;
+}
