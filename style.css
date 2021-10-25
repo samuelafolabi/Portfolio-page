@@ -17,6 +17,7 @@ body {
   list-style: none;
   text-decoration: none;
   display: flex;
+
 }
 
 #nav-bar {
@@ -81,8 +82,8 @@ body {
   border: none;
   font-size: 1.1em;
   font-weight: 500;
-  font-family: "Nunito";
-  padding: 10px 40px;
+  font-family: "Montserrat";
+  padding: 14px 40px;
   border-radius: 24px;
 }
 
@@ -95,10 +96,174 @@ body {
 
 /* Works Section Header */
 .works-section-header {
-  margin-top: 40px;
+  margin-top: 60px;
   text-align: center;
   font-family: "Montserrat";
   font-size: 1.1em;
   font-weight: 500;
   color: #39344d;
 }
+/* END - Works Section Header */
+
+/*Cards*/
+#projects-container {
+  margin-top: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.project-card {
+  max-width: 28vw;
+  padding-top: 2px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 18px;
+  box-shadow: 0 8px 8px 10px #f8faff;
+}
+
+.project-title {
+  font-weight: 600;
+  color: #494952;
+  margin-top: 18px;
+}
+
+.tag {
+  color: #a6a6b9;
+  padding: 4px 8px;
+  border: 1.3px solid #a6a6b9;
+  border-radius: 4px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.project-card p {
+  color: #4e4e55;
+  margin-top: 10px;
+}
+
+.card-button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  color: #a53508;
+  font-family: "Montserrat";
+  background-color: #ffe4d9;
+  font-weight: 500;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 4px;
+  margin-top: 1.2rem;
+}
+
+.card-button:hover {
+  border: 1px solid #a53508;
+}
+/* END - cards */
+
+
+
+/*Contact Section Header*/
+
+.contact-section-header {
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #dadada;
+}
+
+/* END - Contact Section Header*/
+
+/*Contact Section*/
+#contact-section {
+    background-color: #0a0a0a;
+    margin-top: 100px;
+
+  }
+
+
+
+
+
+  .client-name { 
+border: none;
+    background: #000000;
+    font-family: "Montserrat";
+    color: #dadada;
+    width: 48vw;
+    height: 60px;
+    border-radius: 10px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 20px;
+    padding-left: 20px;
+  
+
+
+  }
+
+ .client-email {
+    border:none;
+    background: #000000;
+    font-family: "Montserrat";
+    color: #dadada;
+    width: 48vw;
+    height: 60px;
+    border-radius: 10px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 20px;
+    padding-left: 20px;
+  
+
+ }
+
+.message {
+ border:none;
+background: #000000;
+font-family: "Montserrat";
+color: #dadada;
+display: block;
+width: 48vw;
+height: 200px;
+border-radius: 10px;
+position: relative;
+left: 50%;
+transform: translate(-50%);
+padding-left: 20px;
+margin-bottom: 20px;
+padding-top: 20px ;
+
+}
+
+.get-in-touch-button{
+    background-color: #fff5f1;
+    border: none;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: "Montserrat";
+    padding: 14px 40px;
+    border-radius: 24px;
+    position:relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 20px;
+  }
+  
+  .get-in-touch-button:hover {
+    background-color: #a53508; /*orange*/
+    color: #fff5f1;
+
+/* END - Contact section*/

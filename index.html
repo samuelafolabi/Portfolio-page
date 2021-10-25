@@ -2,38 +2,125 @@
 <link rel="stylesheet" href="style.css" />
 
 <html>
-  <!--Navigation Bar-->
+  <body>
+    <!--Navigation Bar-->
 
-  <nav id="nav-bar">
-    <ul class="nav-list">
-      <li>
-        <a href="hero-section">About</a>
-      </li>
-      <li>
-        <a href="#works-section">Works</a>
-      </li>
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
+    <nav id="nav-bar">
+      <ul class="nav-list">
+        <li>
+          <a href="hero-section">About</a>
+        </li>
+        <li>
+          <a href="#works-section">Works</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-  <!--End of Navigation Bar-->
+    <!--End of Navigation Bar-->
 
-  <!--Hero Section-->
-  <section id="hero-section">
-    <div class="hero-text">
-      <h1>Hey! I'm Sam</h1>
-      <p>Frontend Developer</p>
-      <button>Hire Me</button>
-    </div>
-  </section>
-  <!--END - Hero Section-->
+    <!--Hero Section-->
+    <section id="hero-section">
+      <div class="hero-text">
+        <h1>Hey! I'm Sam</h1>
+        <p>Frontend Developer</p>
+        <button>Hire Me</button>
+      </div>
+    </section>
+    <!--END - Hero Section-->
 
-  <!--Works section-->
-  <section id="works-section">
-    <div class="works-section-header">
-      <p>My Projects</p>
-    </div>
-  </section>
+    <!--Works section-->
+    <section id="works-section">
+      <div class="works-section-header">
+        <p>My Projects</p>
+      </div>
+      <!--Cards -->
+      <div id="projects-container">
+        <!--Card 1-->
+        <div class="project-card" id="documentation">
+          <img src="Frame 1.jpg" alt="documentation-page" />
+          <!--Project Description-->
+          <div>
+            <span class="tag">UI DESIGN</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+
+            <div class="project-title">Documentation Page</div>
+            <p>
+              User Experience Design Documentation Page developed in HTML5 and
+              CSS3 only. The UI was designed by me with Figma.
+            </p>
+          </div>
+          <!-- END - Project Description-->
+          <button class="card-button">View Project</button>
+        </div>
+        <!--END - Card 1-->
+
+        <!--Card 2-->
+        <div class="project-card" id="product-landing-page">
+          <img src="Frame 2.png" alt="product-landing-page" />
+          <!--Project Description-->
+          <div>
+            <span class="tag">UI DESIGN</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+
+            <div class="project-title">Pizza Haven Page</div>
+            <p>
+              Landing Page for an online Pizza Order Kitchen developed in HTML5
+              and CSS3 only. The UI was designed by me with Figma.
+            </p>
+          </div>
+          <!-- END - Project Description-->
+          <button class="card-button">View Project</button>
+        </div>
+        <!--END - Card 2-->
+
+        <!--Card 3-->
+        <div class="project-card" id="tribute-page">
+          <img src="Frame 3.png" alt="tribute-page" />
+          <!--Project Description-->
+          <div>
+            <span class="tag">UI DESIGN</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+
+            <div class="project-title">Tribute Page</div>
+            <p>
+              A Muhammad Ali tribute page developed in HTML5 and CSS3 onlyThe UI
+              was designed by me with Figma.
+            </p>
+          </div>
+          <!-- END - Project Description-->
+          <button class="card-button">View Project</button>
+        </div>
+        <!--END - Card 3-->
+      </div>
+
+      <!-- END - Cards -->
+    </section>
+    <!--END - Works Section-->
+
+    <!--Contact Section-->
+    <section id="contact-section">
+      `
+      <div class="contact-section-header"><p>Get in touch</p></div>
+
+      <div class="form">
+        <input type="text" class="client-name" placeholder="Your name" />
+
+        <input type="email" class="client-email" placeholder="Your email" />
+        <textarea
+          class="message"
+          cols="1"
+          rows="1"
+          placeholder="Message"
+        ></textarea>
+        <button class="get-in-touch-button">Get in touch</button>
+      </div>
+    </section>
+    <!--END - Contact Section-->
+  </body>
 </html>
