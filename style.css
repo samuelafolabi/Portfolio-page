@@ -134,7 +134,7 @@ img {
 }
 
 /* Make 1 column instead of 3 columns */
-@media (max-width: 800px) {
+@media (max-width: 414px) {
     #projects-container {
         flex-direction: column;
     
@@ -143,6 +143,7 @@ img {
     .project-card {
         min-width: 80vw;
         align-self: center;
+        margin-bottom: 40px;
     }
 }
 
