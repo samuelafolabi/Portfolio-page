@@ -112,7 +112,11 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex-direction: row;
 }
+
+
+
 
 img {
   width: 100%;
@@ -127,6 +131,19 @@ img {
   padding-left: 10px;
   padding-bottom: 18px;
   box-shadow: 0 8px 8px 10px #f8faff;
+}
+
+/* Make 1 column instead of 3 columns */
+@media (max-width: 800px) {
+    #projects-container {
+        flex-direction: column;
+    
+    }
+
+    .project-card {
+        min-width: 80vw;
+        align-self: center;
+    }
 }
 
 .project-title {
@@ -251,7 +268,7 @@ padding-top: 20px ;
 .get-in-touch-button{
     background-color: #fff5f1;
     border: none;
-    font-size: 1em;
+    font-size: 0.85em;
     font-weight: 400;
     font-family: "Montserrat";
     padding: 14px 40px;
@@ -259,7 +276,7 @@ padding-top: 20px ;
     position:relative;
     left: 50%;
     transform: translate(-50%);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   
   .get-in-touch-button:hover {
