@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: "Nunito";
   color: #180d3f;
   font-size: 16px;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -17,7 +23,6 @@ body {
   list-style: none;
   text-decoration: none;
   display: flex;
-
 }
 
 #nav-bar {
@@ -111,12 +116,8 @@ body {
   background-color: #fff;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   flex-direction: row;
 }
-
-
-
 
 img {
   width: 100%;
@@ -125,7 +126,8 @@ img {
 }
 
 .project-card {
-  max-width: 28vw;
+  /* min-width: 28vw; */
+  width: 100%;
   padding-top: 2px;
   padding-right: 10px;
   padding-left: 10px;
@@ -134,17 +136,17 @@ img {
 }
 
 /* Make 1 column instead of 3 columns */
-@media (max-width: 414px) {
-    #projects-container {
-        flex-direction: column;
-    
-    }
+@media only screen and (max-width: 768px) {
+  #projects-container {
+    flex-direction: column;
+    display: block;
+  }
 
-    .project-card {
-        min-width: 80vw;
-        align-self: center;
-        margin-bottom: 40px;
-    }
+  .project-card {
+    width: 100%;
+    align-self: center;
+    margin-bottom: 40px;
+  }
 }
 
 .project-title {
@@ -185,8 +187,6 @@ img {
 }
 /* END - cards */
 
-
-
 /*Contact Section Header*/
 
 .contact-section-header {
@@ -202,86 +202,76 @@ img {
 
 /*Contact Section*/
 #contact-section {
-    background-color: #0a0a0a;
-    margin-top: 100px;
-
-  }
-
-
-
-
-
-  .client-name { 
-border: none;
-    background: #000000;
-    font-family: "Montserrat";
-    color: #dadada;
-    width: 48vw;
-    height: 60px;
-    border-radius: 10px;
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    margin-bottom: 20px;
-    padding-left: 20px;
-  
-
-
-  }
-
- .client-email {
-    border:none;
-    background: #000000;
-    font-family: "Montserrat";
-    color: #dadada;
-    width: 48vw;
-    height: 60px;
-    border-radius: 10px;
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    margin-bottom: 20px;
-    padding-left: 20px;
-  
-
- }
-
-.message {
- border:none;
-background: #000000;
-font-family: "Montserrat";
-color: #dadada;
-display: block;
-width: 48vw;
-height: 200px;
-border-radius: 10px;
-position: relative;
-left: 50%;
-transform: translate(-50%);
-padding-left: 20px;
-margin-bottom: 20px;
-padding-top: 20px ;
-
+  background-color: #0a0a0a;
+  margin-top: 100px;
 }
 
-.get-in-touch-button{
-    background-color: #fff5f1;
-    border: none;
-    font-size: 0.85em;
-    font-weight: 400;
-    font-family: "Montserrat";
-    padding: 14px 40px;
-    border-radius: 24px;
-    position:relative;
-    left: 50%;
-    transform: translate(-50%);
-    margin-bottom: 40px;
-  }
-  
-  .get-in-touch-button:hover {
-    background-color: #a53508; /*orange*/
-    color: #fff5f1;
+.client-name {
+  border: none;
+  background: #000000;
+  font-family: "Montserrat";
+  color: #dadada;
+  width: 48vw;
+  height: 60px;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.client-email {
+  border: none;
+  background: #000000;
+  font-family: "Montserrat";
+  color: #dadada;
+  width: 48vw;
+  height: 60px;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.message {
+  border: none;
+  background: #000000;
+  font-family: "Montserrat";
+  color: #dadada;
+  display: block;
+  width: 48vw;
+  height: 200px;
+  border-radius: 10px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  padding-left: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.get-in-touch-button {
+  background-color: #fff5f1;
+  border: none;
+  font-size: 0.85em;
+  font-weight: 400;
+  font-family: "Montserrat";
+  padding: 14px 40px;
+  border-radius: 24px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 40px;
+}
+
+.get-in-touch-button:hover {
+  background-color: #a53508; /*orange*/
+  color: #fff5f1;
+}
 
 /* END - Contact section*/
